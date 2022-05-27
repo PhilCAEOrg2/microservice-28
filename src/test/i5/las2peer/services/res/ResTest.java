@@ -95,14 +95,14 @@ public class ResTest {
     c.setAddressPort(HTTP_ADDRESS, HTTP_PORT);
     
     try {
-  ClientResponse result = c.sendRequest("GET", mainPath + "//firstreq", "");
+  ClientResponse result = c.sendRequest("GET", mainPath + "//secondreq2", "");
   assertTrue(true); // change here
   System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
 } catch (Exception e) {
   e.printStackTrace();
   fail("Exception: " + e);
 }try {
-  ClientResponse result = c.sendRequest("GET", mainPath + "//secondreq", "");
+  ClientResponse result = c.sendRequest("GET", mainPath + "//firstreq", "");
   assertTrue(true); // change here
   System.out.println("Result of 'test$HTTP_Method_Name$': " + result.getResponse().trim());
 } catch (Exception e) {
